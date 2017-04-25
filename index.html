@@ -7,13 +7,29 @@
 
 
 <!--   pillars -->
-  <a-cylinder position="-1 1 0" rotation="0 0 0" radius="0.1" height="2" color="white"></a-cylinder>
-  <a-cylinder position="1 1 0" radius="0.1" height="2" color="white"></a-cylinder>
+  <a-cylinder position="-1.5 1 0" rotation="0 0 0" radius="0.1" height="2" color="white"></a-cylinder>
+  <a-cylinder position="1.5 1 0" radius="0.1" height="2" color="white"></a-cylinder>
 
 <!--   banner -->
-  <a-box color="black" position="0 1.7 -0.1" rotation="0 0 0" depth="0.1" height="0.5" width="2"></a-box>
-  <a-text value="Hello A-Frame!" position="-0.9 1.7 0" width="6" color="white"></a-text>
+  <a-box color="black" position="0 1.7 -0.1" rotation="0 0 0" depth="0.1" height="0.5" width="3.5">      <a-animation attribute="rotation"
 
+              dur="2000"
+               fill="forwards"
+               to="0 360 0"
+
+              repeat="indefinite"></a-animation></a-box>
+  <a-text value="keatonlockwood.com" position="-1.3 1.7 0" width="6" color="white">      <a-animation attribute="rotation"
+
+              dur="2000"
+               fill="forwards"
+               to="0 360 0"
+
+              repeat="indefinite"></a-animation></a-text>
+
+      <a-sphere color="white" radius="0.15" position="1.5 2 0"></a-sphere>
+<a-sphere color="white" radius="0.15" position="-1.5 2 0"></a-sphere>
       <a-marker-camera preset='kanji'></a-marker-camera>
+
+
 	</a-scene>
 </body>
