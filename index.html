@@ -4,15 +4,16 @@
 <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded artoolkit='sourceType: webcam;'>
-	<a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5" position="0 0.5 0" segments-height="53">
-         <a-animation attribute="scale"
-              dur="1000"
-              from= "1 1 1"
-              to="2 2 2"
-              direction='alternate-reverse'
-              easing= "ease-in-out-circ"
-              repeat="indefinite"></a-animation>
-     </a-sphere>
-		<a-marker-camera preset='kanji'></a-marker-camera>
+
+
+<!--   pillars -->
+  <a-cylinder position="-1 1 0" rotation="0 0 0" radius="0.1" height="2" color="white"></a-cylinder>
+  <a-cylinder position="1 1 0" radius="0.1" height="2" color="white"></a-cylinder>
+
+<!--   banner -->
+  <a-box color="black" position="0 1.7 -0.1" rotation="0 0 0" depth="0.1" height="0.5" width="2"></a-box>
+  <a-text value="Hello A-Frame!" position="-0.9 1.7 0" width="6" color="white"></a-text>
+
+      <a-marker-camera preset='kanji'></a-marker-camera>
 	</a-scene>
 </body>
